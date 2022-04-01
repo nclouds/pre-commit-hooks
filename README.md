@@ -1,4 +1,8 @@
-# Hooks
+<p align="left"><img width=400 height="100" src="https://www.nclouds.com/img/nclouds-logo.svg"></p>  
+
+# nCode Library
+
+## Hooks
 
 You may install these hooks by adding this code to your ``
 
@@ -8,10 +12,15 @@ You may install these hooks by adding this code to your ``
     hooks:
     -   id: validate-commit-message
 ```
+
+To install the hooks you need to install [pre-commit framework](https://pre-commit.com/) and run on you projects bash:
+
+`pre-commit install` and `pre-commit install --hook-type commit-msg`
+
 Currently the hooks available are:
  * [validate-commit-message](#commit-message)
  * [validate-branch-name](#branch-name)
- * [validate-gpg-key](#signin-commit)
+ * [validate-gpg-key](#commit-signature)
 
 ## Commit Message
 
@@ -43,7 +52,7 @@ ticket should be a set of letters and id shoulbe be a set of numbers
     - id: validate-branch-name
 ```
 
-## Signin Commit
+## Commit Signature
 
 Validates that the commits are being signed, for this you need to [set a GPG key](https://docs.github.com/es/authentication/managing-commit-signature-verification/adding-a-new-gpg-key-to-your-github-account) and a git configuration as `git config commit.gpgsign true`
 
