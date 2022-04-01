@@ -11,9 +11,13 @@
   description: Validates that the branch name contains the correct format
   entry: ./hooks/branch_name.sh
   language: script
+  stages:
+    - commit
 
 - id: validate-gpg-key
   name: Validate GPG Key
   description: Validates that the commits are being signed
   entry: ./hooks/signin_key.sh
   language: script
+  stages:
+    - commit
