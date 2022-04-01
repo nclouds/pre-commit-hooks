@@ -6,11 +6,12 @@
 
 You may install these hooks by adding this code to your ``
 
-```
--   repo: https://github.com/nclouds/pre-commit-hooks.git
-    rev: v1.0.0  # Use the ref you want to point at
-    hooks:
-    -   id: validate-commit-message
+```yaml
+repos:
+    - repo: https://github.com/nclouds/pre-commit-hooks.git
+      rev: v1.0.0  # Use the ref you want to point at
+      hooks:
+      -   id: validate-commit-message
 ```
 
 To install the hooks you need to install [pre-commit framework](https://pre-commit.com/) and run on you projects bash:
