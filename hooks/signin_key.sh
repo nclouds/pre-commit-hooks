@@ -13,8 +13,7 @@ then
     exit 1
 fi
 
-echo $GIT_EDITOR
-
+# it dosn't catch -S flag, so we recommend to use git config commit.gpgsign=true
 if [[ ! "$defaultSign" =~ "true" ]];
 then
     echo "No signin option set, try running: git config commit.gpgsign true"

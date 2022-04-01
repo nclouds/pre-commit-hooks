@@ -1,0 +1,8 @@
+repos:
+  - repo: git@github.com:nclouds/pre-commit-hooks.git
+    rev: feat/NCOD-5
+    hooks:
+      - id: validate-commit-message
+      - id: validate-branch-name
+      - id: validate-gpg-key
+      
