@@ -1,0 +1,19 @@
+- id: validate-commit-message
+  name: Validate Commit Message
+  description: Validates that the commit message contains the correct format
+  entry: ./hooks/commit_message.sh
+  language: script
+  stages:
+    - commit-msg
+
+- id: validate-branch-name
+  name: Validate Branch Name
+  description: Validates that the branch name contains the correct format
+  entry: ./hooks/branch_name.sh
+  language: script
+
+- id: validate-gpg-key
+  name: Validate GPG Key
+  description: Validates that the commits are being signed
+  entry: ./hooks/signin_key.sh
+  language: script
