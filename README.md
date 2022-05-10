@@ -55,7 +55,7 @@ ticket should be a set of letters and id shoulbe be a set of numbers
 
 ## Commit Signature
 
-Validates that the commits are being signed, for this you need to [set a GPG key](https://docs.github.com/es/authentication/managing-commit-signature-verification/adding-a-new-gpg-key-to-your-github-account) and a git configuration as `git config commit.gpgsign true`
+Validates that the commits are being signed, for this you need to [set a GPG key](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-new-gpg-key-to-your-github-account) and a git configuration as `git config commit.gpgsign true`
 
 ```yaml
     - id: validate-gpg-key
